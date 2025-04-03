@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"aenzbi-cloud-project","appId":"1:371058325493:web:89927c8f364165edc792bc","databaseURL":"https://aenzbi-cloud-project-default-rtdb.firebaseio.com","storageBucket":"aenzbi-cloud-project.firebasestorage.app","locationId":"us-central","apiKey":"AIzaSyCo6_oNMRkd01HMwNUfkime1SHg1DF5IaQ","authDomain":"aenzbi-cloud-project.firebaseapp.com","messagingSenderId":"371058325493","measurementId":"G-XBX05D70PH"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
